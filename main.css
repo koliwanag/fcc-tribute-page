@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    background-color: hsl(30, 70%, 26%);
+    font-family: Papyrus, serif;
+}
+
+
+
+
+
+/*------------------------Cover Page------------------------*/
+
+
+
+
+
+header {
+    background: linear-gradient( hsla(30, 70%, 26%, 0.3), hsla(30, 70%, 26%, 0.3) ), url(./images/the-annunciation.jpg);
+    background-position: center;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 12vw;
+    padding: 18vw;
+    text-align: center;
+    text-shadow: 0px 0px 20px hsl(0, 0%, 0%);
+}
+
+
+
+
+
+/*----------------------------Main Content---------------------------*/
+
+
+
+
+
+h2 {
+    max-height: 250px;
+    color: hsl(0, 0%, 100%);
+    font-size: 6vw;
+    padding: 1.5vw;
+    text-align: center;
+    text-shadow: 0px 0px 20px hsl(0, 0%, 0%);
+}
+
+@media (min-width: 1300px) {
+    h2 {
+        font-size: 5rem;
+    }
+    
+}
+
+#tribute-info {
+    background: linear-gradient( hsla(30, 70%, 26%, 0.3), hsla(30, 70%, 26%, 0.3) ), url(./images/ldvhuman.jpg);
+    padding-top: 8vw;
+    background-position: 0 40%;
+}
+
+article {
+    width: 85%;
+    max-width: 1000px;
+    padding-bottom: 5vw;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    grid-gap: 5vw 5vw;
+    grid-template: repeat(4, auto) / 1fr 1fr;
+    grid-template-areas: 
+        "p1 img"
+        "quote quote"
+        "p2 p4"
+        "p3 p5";
+
+}
+
+p, figcaption {
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    text-align: justify;
+    background-color: hsla(30, 70%, 26%, 0.5);
+    box-shadow: 0px 0px 30px 30px hsla(30, 70%, 26%, 0.5);
+    border-radius: 30px;
+    text-shadow: 0px 0px 3px hsl(0, 0%, 0%);
+}
+
+@media (max-width: 1200px)  {
+    p, figcaption {
+        font-size: 1.3rem;
+    }
+}
+
+
+#p1 {
+    grid-area: p1;
+}
+
+figure {
+    grid-area: img;
+    align-self: center;
+}
+
+#ldvportrait img {
+    max-width: 100%;
+    width: 30vw;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    justify-self: center;
+}
+
+ 
+figcaption  {
+    margin-top: 1vw;
+    text-align: center;
+}
+
+#quote {
+    margin: 1.5vw auto;
+    grid-area: quote;
+    align-self: center;
+    color: hsl(60, 100%, 50%);
+    font-style: italic;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    #quote {
+        font-size: 2.2rem;
+    }
+}
+
+#p2 {
+    grid-area: p2;
+}
+
+#p3 {
+    grid-area: p3;
+}
+
+#p4 {
+    grid-area: p4;
+}
+
+#p5 {
+    grid-area: p5;
+}
+
+@media (max-width: 900px) {
+
+    article {
+        width: 75%;
+        grid-row-gap: 10vw;
+        grid-template: repeat(7, auto) / auto;
+        grid-template-areas: 
+        "p1"
+        "img"
+        "quote"
+        "p2"
+        "p3"
+        "p4"
+        "p5";
+        justify-items: center;
+        margin: auto;
+        padding-bottom: 10vw;
+    }
+
+    article p {
+        font-size: 1.1rem;
+    }
+
+    #img-caption {
+        font-size: 1.1rem;
+    }
+
+    #quote {
+        font-size: 1.6rem;
+    }
+
+    #further-reading h3 {
+        font-size: 1.8rem;
+    }
+    
+    #further-reading li {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+
+/*-------------------------Further Reading------------------------*/
+
+
+
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: hsl(60, 100%, 50%);
+    text-align: center;
+    text-shadow: 0px 0px 5px hsl(0, 0%, 0%);
+}
+
+@media (min-width: 1300px) {
+    h3 {
+        font-size: 3.5rem;
+    }
+}
+
+
+#further-reading {
+    background: linear-gradient( hsla(30, 70%, 26%, 0.3), hsla(30, 70%, 26%, 0.3) ), url(./images/monalisasmall.jpg);
+    padding: 10vw;
+    background-position: 0 10%;
+}
+
+ul {
+    width: 85%;
+    max-width: 1000px;
+    margin: 4vw auto;
+}
+
+li {
+    font-weight: 800;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    padding: 3vw;
+    text-shadow: 0px 0px 5px hsl(0, 0%, 0%);
+}
+
+button {
+    background: hsla(49, 86%, 23%, 0.6);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background: hsla(0, 0%, 0%, 0.8);
+    text-decoration: underline;
+    transform:scale(1.2);
+}
+
+a {
+    font-family: Garamond, serif;
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+
+
+
+
+/*---------Fixed Background-----------*/
+
+
+
+header, #tribute-info, #further-reading {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
